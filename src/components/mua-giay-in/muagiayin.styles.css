@@ -1,0 +1,156 @@
+.muagiayin_container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+  height: 70vh;
+}
+.muagiay-wrapper {
+  padding: 4vw 2vw;
+  margin: 3vw;
+  border-radius: 30px;
+  border: 1px solid #d9d9d9;
+  width: 40vw;
+}
+.cart-wrapper {
+  padding: 2vw;
+  margin: 3vw;
+  border-radius: 30px;
+  border: 1px solid #d9d9d9;
+  width: 40vw;
+  min-height: 40vh;
+  max-height: 58vh;
+  height: fit-content;
+}
+.khogiay,
+.soluonggiay,
+.giatien {
+  display: flex;
+  color: #1488db;
+  margin-bottom: 60px;
+}
+.lable-text {
+  display: inline;
+  color: #1488db;
+  margin-right: 200px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+.lable-text-giatien {
+  margin-right: 170px;
+}
+
+.table-soluong,
+.table-khogiay {
+  width: 70px;
+  height: 32px;
+  border-radius: 20px;
+  border: 1px solid #cacaca;
+  font-size: 15px;
+}
+.table-soluong {
+  padding-left: 12px;
+}
+.table-khogiay {
+  padding-left: 20px;
+}
+
+.giatien {
+  display: flex;
+}
+.giatien-total {
+  font-size: 24px;
+  font-weight: 600;
+  color: #686868;
+  margin: auto;
+}
+th {
+  background-color: #f2f2f2;
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: left;
+}
+
+.lable-text-cart {
+  margin: 0;
+}
+
+.title-thanhtoan {
+  margin-top: 220px;
+}
+
+.body-thanhtoan {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+
+.footer-thanhtoan {
+  margin-top: 60px;
+}
+
+/* Style table data cells */
+.table-cart {
+  width: 100%;
+  margin: 20px 0;
+  
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+}
+
+td {
+  border-top: 1px solid gray;
+  padding: 5px;
+}
+
+thead {
+  color: #1488db;
+}
+
+th {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  border: none;
+}
+
+.in-table {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.in-table-price {
+  color: #686868;
+}
+
+.add-button {
+  width: 120px;
+  height: 45px;
+  color: #e5f4ff;
+  background-color: #1488db;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+}
+
+.add-button:hover {
+  cursor: pointer;
+  background-color: rgba(16, 110, 193, 0.5);
+}
+
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}

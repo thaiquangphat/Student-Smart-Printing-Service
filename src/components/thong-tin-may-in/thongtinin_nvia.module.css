@@ -1,0 +1,124 @@
+.container{
+    width: 1300px;
+    height: 500px;
+    border: 2px #D9D9D9 solid;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-top: 10px;
+}
+
+.searchContainer{
+    width: 502px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    border: 1px solid #A8A4A4;
+    margin-inline: auto;
+    padding-inline: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.searchContainer > input{
+    width: 100%;
+    height: 90%;
+    border: none;
+    &:focus-visible{
+        outline: none;
+    }
+    font-size: 18px;
+}
+
+.tableContainer {
+    width: 98%;
+    height: 85%;
+    overflow-y: scroll;
+    margin-inline: auto;
+}
+
+
+.tableContainer > table {
+    width: 100%;
+    /* height: 100%; */
+    border-collapse: collapse;
+    
+}
+
+.tableContainer thead tr{
+    height: 28px;
+    
+}
+
+.tableContainer thead th{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    border-bottom: 3px #D9D9D9 solid;
+}
+
+/* .tableContainer tbody tr, .tableContainer tbody td{
+    border: 1px #D9D9D9 solid;
+} */
+
+.tableContainer tbody{
+    overflow: scroll;
+}
+
+
+
+.tableContainer tbody tr{
+    color: #504c4c;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    height: 90px;
+}
+
+.tableContainer tbody td{
+    /* height: 90px; */
+}
+
+.tableContainer td{
+    text-align: center;
+    vertical-align: middle;
+    border: 1px #D9D9D9 solid;
+}
+
+.tableContainer input{
+    scale: 1.2;
+}
+
+.tableContainer tbody > tr > :nth-child(5){
+    color: #504c4c;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 8px;
+}
+
+
+.tableContainer tbody > tr > :nth-child(7), .tableContainer tbody > tr > :nth-child(8), .tableContainer tbody > tr > :nth-child(9){
+    text-align: left;
+    padding-left: 8px;
+    &>input{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+.tableContainer tbody tr > :first-child{
+    border-left: none;
+}
+
+.tableContainer tbody tr > :last-child{
+    border-right: none;
+}

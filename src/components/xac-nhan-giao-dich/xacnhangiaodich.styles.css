@@ -1,0 +1,43 @@
+/* XacNhanGiaoDich */
+
+.order-title {
+    margin: 15px;
+}
+
+.order-content {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.order-file-table {
+    min-height: 40vh;
+}
+
+.file-title {
+    color: #707070;
+    font-weight: 600;
+    font-size: 20px;
+    width: 35%;
+    text-align: center;
+}
+
+.file-list {
+    list-style: none;
+}
+
+.file-item {
+    display: flex;
+}
+
+.file-item-content {
+    width: 35%;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0;
+    border-bottom: solid 1px #cacaca;
+}
+
+.file-name {
+    color: #1488db;
+    font-style: italic;
+}

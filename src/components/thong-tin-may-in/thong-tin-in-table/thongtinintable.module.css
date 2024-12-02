@@ -1,0 +1,124 @@
+.accountName{
+    color: #1488DB;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.accountNameTag{
+    color: #1488DB;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.location{
+    color: #504c4c;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.locationTag{
+    color: #504c4c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+  width: 90%;
+  height: 80%;
+  border: 2px #d9d9d9 solid;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.searchContainer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.searchContainer input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.tableContainer {
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableContainer th, .tableContainer td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+}
+
+.tableContainer th {
+  background-color: #f4f4f4;
+}
+
+.tableContainer tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    height: 80%;
+    border: 2px #d9d9d9 solid;
+    border-radius: 10px;
+    margin: auto;
+  }
+  
+  .searchContainer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .searchContainer input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+  }
+  
+  .tableContainer {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+  }
+  
+  .tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableContainer th, .tableContainer td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .tableContainer th {
+    background-color: #f4f4f4;
+  }
+  
+  .tableContainer tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

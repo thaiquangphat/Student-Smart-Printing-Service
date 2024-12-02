@@ -1,0 +1,65 @@
+.table-history-nvia {
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.history-title-nvia {
+  color: #707070;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100px;
+  text-wrap: nowrap;
+  padding: 10px;
+  border-bottom: solid 3px #cacaca;
+}
+
+.history-title-nvia-filename {
+  width: 330px;
+}
+
+.history-title-nvia-username {
+  width: 200px;
+}
+
+.history-item-content-nvia-username {
+  color: #1488db;
+  font-weight: 600;
+}
+
+.history-item-content-nvia-filename {
+  color: #1488dbcc;
+  font-style: italic;
+}
+
+.history-item-content-nvia-pagenumber {
+  font-weight: 600;
+  color: #857f7f;
+}
+
+.history-item-content-nvia-receive {
+    color: green;
+}
+
+.history-item-content-nvia-inprogress {
+    color: orange;
+}
+
+.history-item-content-nvia-printed {
+    color: blue;
+}
+
+.history-xemchitiet {
+    background-color: #1778ae;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.history-xemchitiet:hover {
+  cursor: pointer;
+  background-color: #1488dbb8;
+}
