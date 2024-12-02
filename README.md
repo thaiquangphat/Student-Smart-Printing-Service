@@ -10,9 +10,7 @@
 
 ## Demo
 
-
-https://github.com/thaiquangphat/Student-Smart-Printing-Service/tree/main/docs/demo.mp4
-
+<video src="https://youtu.be/7C51aL3ncKY" width="320" height="240" controls></video>
 
 ## Installation
 
