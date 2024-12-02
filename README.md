@@ -10,7 +10,11 @@
 
 ## Demo
 
-[![Video Thumbnail](https://img.youtube.com/vi/7C51aL3ncKY/maxresdefault.jpg)](https://youtu.be/7C51aL3ncKY)
+<div align="center">
+  <a href="https://youtu.be/7C51aL3ncKY" target="_blank">
+    <img src="https://img.youtube.com/vi/7C51aL3ncKY/maxresdefault.jpg" alt="Video Thumbnail" width="450" />
+  </a>
+</div>
 
 ## Installation
 
