@@ -51,8 +51,8 @@
 
 ## Contributors
 
-Thai Quang Phat – 2252606
-Phan Quang Minh – 2212074
-Phan Quang Nhan – 2053286
-Phung Gia Minh Khoi – 2252381
-Thai Quang Du – 2252136
+* Thai Quang Phat – 2252606
+* Phan Quang Minh – 2212074
+* Phan Quang Nhan – 2053286
+* Phung Gia Minh Khoi – 2252381
+* Thai Quang Du – 2252136
