@@ -10,7 +10,7 @@
 
 ## Demo
 
-<video src="https://youtu.be/7C51aL3ncKY" width="320" height="240" controls></video>
+[![Video Thumbnail](https://img.youtube.com/vi/7C51aL3ncKY/maxresdefault.jpg)](https://youtu.be/7C51aL3ncKY)
 
 ## Installation
 
