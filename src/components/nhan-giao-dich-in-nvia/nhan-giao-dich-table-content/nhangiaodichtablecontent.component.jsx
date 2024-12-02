@@ -32,7 +32,7 @@ const TableRow = (props) => {
           value="Confirm"
           defaultChecked={data.confirmation}
         />
-        <span>Yes</span>
+        <span>Có</span>
         <br />
         <input
           type="radio"
@@ -40,7 +40,7 @@ const TableRow = (props) => {
           value="UnConfirm"
           defaultChecked={!data.confirmation}
         />
-        <span>No</span>
+        <span>Không</span>
       </td>
       <td>
         <input
@@ -49,7 +49,7 @@ const TableRow = (props) => {
           value="Printed"
           defaultChecked={data.status}
         />
-        <span>Printed</span>
+        <span>Đã in</span>
         <br />
         <input
           type="radio"
@@ -57,7 +57,7 @@ const TableRow = (props) => {
           value="UnPrinted"
           defaultChecked={!data.status}
         />
-        <span>Not printed</span>
+        <span>Chưa in</span>
       </td>
       <td>
         <input
@@ -66,7 +66,7 @@ const TableRow = (props) => {
           value="Delivered"
           defaultChecked={data.delivery}
         />
-        <span>Yes</span>
+        <span>Có</span>
         <br />
         <input
           type="radio"
@@ -74,7 +74,7 @@ const TableRow = (props) => {
           value="UnDelivered"
           defaultChecked={!data.delivery}
         />
-        <span>No</span>
+        <span>Không</span>
       </td>
     </tr>
   );

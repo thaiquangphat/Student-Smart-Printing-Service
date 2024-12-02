@@ -52,18 +52,18 @@ const Navigation = (props) => {
           {role === "user" && (
             <>
               <XemLichSuUser />
-              <div className="balance-container">
-                <button
-                  className="nav-link"
-                  id="box0"
-                  onClick={toggleBalanceDropdown}
-                >
-                  Số dư
-                </button>
+              <button
+                type="button"
+                className="button-custom1 balance-button"
+                onClick={toggleBalanceDropdown}
+              >
+                Số dư
                 {showBalance && (
-                  <div className="balance-dropdown">{currentBalance} VND</div>
+                  <span className="balance-info">
+                    : {currentBalance} VND
+                  </span>
                 )}
-              </div>
+              </button>
             </>
           )}
           {role !== "user" && <XemLichSuNvia />}

@@ -8,6 +8,7 @@ import ChonMayIn from "../chon-may-in/chonmayin.component";
 import Upload from "../Upload_file/Upload_file.component";
 import NhanGiaoDichIn from "../nhan-giao-dich-in-nvia/nhangiaodichin_nvia.component";
 import ThongTinIn from "../thong-tin-may-in/thongtinin_nvia.components";
+import ThongTinIn1 from "../thong-tin-may-in/thongtinin1_nvia.components";
 import { UserContext } from "../../contexts/user.context";
 
 import {
@@ -36,6 +37,7 @@ const Homepage = (props) => {
   // states for popup
   const [nhanGiaoDich, setNhanGiaoDich] = useState(false);
   const [thongTinMayIn, setThongTinMayIn] = useState(false);
+  const [thongTinMayIn1, setThongTinMayIn1] = useState(false);
   const [inTaiLieu, setInTaiLieu] = useState(false);
   const [muaGiayIn, setMuaGiayIn] = useState(false);
   const [chonMayIn, setChonMayIn] = useState(false);
@@ -45,6 +47,25 @@ const Homepage = (props) => {
   const { currentUser } = useContext(UserContext);
   const { doc, setDoc } = useContext(DocContext);
   const { role, setRole } = useContext(RoleContext);
+  const [showPopup, setShowPopup] = useState(false);
+  const [showPopup1, setShowPopup1] = useState(false);
+  const [showAddForm, setShowAddForm] = useState(false);
+  const [showConfigForm, setShowConfigForm] = useState(false);
+  const [showAddSuccessMessage, setShowAddSuccessMessage] = useState(false);
+  const [showConfigSuccessMessage, setShowConfigSuccessMessage] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+    setShowAddForm(false);
+  };
+
+  const togglePopup1 = () => {
+    setShowPopup1(!showPopup1);
+    setShowAddForm(false);
+  };
+
+
+
   if (currentUser) {
     const fetchData = async () => {
       const data = await getUserInfo(currentUser);
@@ -91,42 +112,185 @@ const Homepage = (props) => {
             <Button
               type="button"
               buttonType={"body"}
-              onClick={() => setNhanGiaoDich(true)}
               className="button-custom"
+              onClick={togglePopup1}
             >
-              Nhận giao dịch
+              Dịch vụ
             </Button>
+            {showPopup1 && (
+              <div className="popup-overlay">
+                <div className="popup-content">
+                  <h2>Các loại dịch vụ</h2>
+                  <div className="popup-buttons">
+                    <button className="button-footer1" onClick={() => { setNhanGiaoDich(true); setShowPopup1(false); }
+                    }>Xem</button>
+                    <button className="button-footer1" onClick={() => { setShowConfigForm(true); setShowPopup1(false); }}>Cài đặt</button>
+                  </div>
+                  <button className="button-footer" onClick={togglePopup1}>Quay lại</button>
+                </div>
+              </div>
+            )}
+            {showConfigForm && (
+              <div className="popup-overlay">
+                <div className="popup-content">
+                  <h2>Điều chỉnh thông số in</h2>
+                  <form className="add-printer-form">
+                    <label>
+                      Chọn ngày:
+                      <input type="date" defaultValue="2024-10-10" />
+                    </label>
+                    <label>
+                      Giá mặc định:
+                      <input type="number" defaultValue="1000" /> VND / trang
+                    </label>
+                    <label>
+                      Số file mặc định:
+                      <input type="number" defaultValue="20" /> / kỳ
+                    </label>
+                    <label>
+                      Thêm loại file:
+                      <input type="text" defaultValue=".docx" />
+                    </label>
+                    <label>
+                      Số file tối đa:
+                      <input type="number" defaultValue="5" /> / lần
+                    </label>
+                    <div className="form-buttons">
+                      <button className="button-footer" onClick={() => {
+                        setShowConfigForm(false);
+                        setShowConfigSuccessMessage(true);
+                      }}>
+                        Xác nhận
+                      </button>
+                      <button
+                        type="button"
+                        className="button-footer"
+                        onClick={() => {
+                          setShowConfigForm(false);
+                          setShowPopup1(true);
+                        }}
+                      >
+                        Quay lại
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            )}
+
+            { showConfigSuccessMessage && (
+              <div className="popup-overlay">
+              <div className="popup-content2">
+                <h2>Cài đặt được cập nhật</h2>
+                <p>Hãy xem trong danh sách in để có thêm thông tin chi tiết</p>
+                <button
+                  className="button-footer2"
+                  onClick={() => {
+                    setShowConfigSuccessMessage(false);
+                  }}
+                >
+                  Quay lại
+                </button>
+              </div>
+            </div>  
+            )}
+
             <Button
               type="button"
               buttonType={"body"}
-              onClick={() => setThongTinMayIn(true)}
               className="button-custom"
-            >
-              Thông tin máy in
+              onClick={togglePopup}>
+              Máy in
             </Button>
+
+            {showPopup && (
+              <div className="popup-overlay">
+                <div className="popup-content">
+                  <h2>Cài đặt máy in</h2>
+                  <div className="popup-buttons">
+                    <button className="button-footer1" onClick={() => { setThongTinMayIn(true); setShowPopup(false); }
+                    }>Xem máy in</button>
+                    <button className="button-footer1" onClick={() => { setThongTinMayIn1(true); setShowPopup(false); }
+                    }>Cài đặt</button>
+                    <button className="button-footer1" onClick={() => { setShowAddForm(true); setShowPopup(false);
+                    }}>Thêm máy</button>
+                  </div>
+                  <button className="button-footer" onClick={togglePopup}>Quay lại</button>
+                </div>
+              </div>
+            )}
+            {showAddForm && (
+              <div className="popup-overlay">
+                <div className="popup-content">
+                  <h2>Thêm máy in</h2>
+                  <form className="add-printer-form">
+                    <label>
+                      Mã máy in:
+                      <input type="text" defaultValue="BK-DA-004" />
+                    </label>
+                    <label>
+                      Tên máy in:
+                      <input type="text" defaultValue="Huawei Printer Plus" />
+                    </label>
+                    <label>
+                      Vị trí:
+                      <input type="text" defaultValue="H6-303" /> at{" "}
+                      <input type="text" defaultValue="Di An" />
+                    </label>
+                    <label>
+                      Công ty:
+                      <input type="text" defaultValue="Huawei" />
+                    </label>
+                    <label>
+                      Ngày nhập:
+                      <input type="date" defaultValue="2024-10-10" />
+                    </label>
+                    <div className="form-buttons">
+                      <button className="button-footer" onClick={() => {
+                        setShowAddForm(false);
+                        setShowAddSuccessMessage(true);
+                      }}>
+                        Xác nhận
+                      </button>
+                      <button
+                        type="button"
+                        className="button-footer"
+                        onClick={() => {
+                          setShowAddForm(false);
+                          setShowPopup(true);
+                        }}
+                      >
+                        Quay lại
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            )}
+
+            {showAddSuccessMessage && (
+              <div className="popup-overlay">
+                <div className="popup-content2">
+                  <h2>Đã thêm máy in</h2>
+                  <p>Kiểm tra danh sách máy in để có thêm thông tin chi tiết</p>
+                  <button
+                    className="button-footer2"
+                    onClick={() => {
+                      setShowAddSuccessMessage(false);
+                    }}
+                  >
+                    Quay lại
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
+
         )}
         {/* nvia */}
         {nhanGiaoDich && <NhanGiaoDichIn openPopup={setNhanGiaoDich} />}
-        {thongTinMayIn && <ThongTinIn openPopup={setThongTinMayIn}/>}
-          {/* <Popup openPopup={setThongTinMayIn} closeBtn={false}>
-            <div className="popup-title">
-              <h1>Thông tin máy in</h1>
-            </div>
-            <div className="popup-body">Body</div>
-            <div className="popup-footer">
-              <button
-                className="button-footer"
-                type="button"
-                onClick={() => {
-                  setThongTinMayIn(false);
-                }}
-              >
-                Quay lại
-              </button>
-            </div>
-          </Popup>
-        )} */}
+        {thongTinMayIn && <ThongTinIn openPopup={setThongTinMayIn} />}
+        {thongTinMayIn1 && <ThongTinIn1 openPopup={setThongTinMayIn1} />}
 
         {/* user */}
         {inTaiLieu && (

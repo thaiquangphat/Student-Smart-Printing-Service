@@ -107,7 +107,7 @@ const NhanGiaoDichIn = (props) => {
   return (
     <Popup openPopup={props.openPopup}>
       <div className="popup-title">
-        <h1>Service log</h1>
+        <h1>Lịch sử giao dịch</h1>
       </div>
       <div className="popup-body">
         <div className={styles.container}>
@@ -123,15 +123,15 @@ const NhanGiaoDichIn = (props) => {
             <table>
               <thead>
                 <tr>
-                  <th style={{ width: "8%" }}>Time</th>
-                  <th style={{ width: "15%" }}>Name</th>
-                  <th style={{ width: "8%" }}>Code</th>
-                  <th style={{ width: "8%" }}>Printer</th>
+                  <th style={{ width: "8%" }}>Thời gian</th>
+                  <th style={{ width: "15%" }}>Tên sinh viên</th>
+                  <th style={{ width: "8%" }}>Mã dịch vụ</th>
+                  <th style={{ width: "8%" }}>Máy in</th>
                   <th style={{ width: "26%" }}>File</th>
-                  <th style={{ width: "5%" }}>Pages</th>
-                  <th style={{ width: "10%" }}>Confirm</th>
-                  <th style={{ width: "10%" }}>Status</th>
-                  <th style={{ width: "10%" }}>Delivered</th>
+                  <th style={{ width: "5%" }}>Số trang</th>
+                  <th style={{ width: "10%" }}>Xác nhận</th>
+                  <th style={{ width: "10%" }}>Trạng thái</th>
+                  <th style={{ width: "10%" }}>Đã nhận</th>
                 </tr>
               </thead>
               <tbody>
@@ -151,7 +151,7 @@ const NhanGiaoDichIn = (props) => {
           className="button-footer"
           onClick={() => props.openPopup(false)}
         >
-          Back
+          Quay lại
         </Button>
       </div>
     </Popup>

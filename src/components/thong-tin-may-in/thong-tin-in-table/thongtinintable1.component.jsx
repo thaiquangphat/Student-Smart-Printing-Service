@@ -34,7 +34,7 @@ const TableRow1 = (props) => {
           value="Confirm"
           defaultChecked={data.confirmation}
         />
-        <span>Enable</span>
+        <span>Cho sử dụng</span>
         <br />
         <input
           type="radio"
@@ -42,7 +42,7 @@ const TableRow1 = (props) => {
           value="UnConfirm"
           defaultChecked={!data.confirmation}
         />
-        <span>Disable</span>
+        <span>Ngưng sử dụng</span>
       </td>
     </tr>
   );

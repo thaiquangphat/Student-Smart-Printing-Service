@@ -21,7 +21,7 @@ const NhanGiaoDichIn1 = (props) => {
       locationTag: "LyThuongKiet",
       printerID: "BK-LTK-001",
       companyName: "Samsung",
-      status: "Good",
+      status: "Tốt",
       confirmation: true,
     },
     {
@@ -32,7 +32,7 @@ const NhanGiaoDichIn1 = (props) => {
       locationTag: "LyThuongKiet",
       printerID: "BK-LTK-002",
       companyName: "Apple",
-      status: "Fine",
+      status: "Ổn",
       confirmation: false,
     },
     {
@@ -43,7 +43,7 @@ const NhanGiaoDichIn1 = (props) => {
       locationTag: "DA",
       printerID: "BK-DA-003",
       companyName: "Logitech",
-      status: "Good",
+      status: "Tốt",
       confirmation: true,
     },
     {
@@ -54,7 +54,7 @@ const NhanGiaoDichIn1 = (props) => {
       locationTag: "DA",
       printerID: "BK-DA-004",
       companyName: "Huawei",
-      status: "Good",
+      status: "Tốt",
       confirmation: false,
     },
   ];
@@ -109,7 +109,7 @@ const NhanGiaoDichIn1 = (props) => {
   return (
     <Popup openPopup={props.openPopup}>
       <div className="popup-title">
-        <h1>Printer</h1>
+        <h1>Cài đặt máy in</h1>
       </div>
       <div className="popup-body">
         <div className={styles.container}>
@@ -125,13 +125,13 @@ const NhanGiaoDichIn1 = (props) => {
             <table>
               <thead>
                 <tr>
-                  <th style={{ width: "8%" }}>Printer code</th>
-                  <th style={{ width: "15%" }}>Printer name</th>
-                  <th style={{ width: "15%" }}>Location</th>
-                  <th style={{ width: "15%" }}>Date</th>
-                  <th style={{ width: "19%" }}>Company</th>
-                  <th style={{ width: "8%" }}>Condition</th>
-                  <th style={{ width: "10%" }}>Status</th>
+                  <th style={{ width: "8%" }}>Mã máy in</th>
+                  <th style={{ width: "15%" }}>Tên máy in</th>
+                  <th style={{ width: "15%" }}>Địa điểm</th>
+                  <th style={{ width: "15%" }}>Ngày nhập</th>
+                  <th style={{ width: "19%" }}>Công ty</th>
+                  <th style={{ width: "8%" }}>Tình trạng</th>
+                  <th style={{ width: "10%" }}>Trạng thái</th>
                 </tr>
               </thead>
               <tbody>
@@ -151,7 +151,7 @@ const NhanGiaoDichIn1 = (props) => {
           className="button-footer"
           onClick={() => props.openPopup(false)}
         >
-          Back
+          Quay lại
         </Button>
       </div>
     </Popup>

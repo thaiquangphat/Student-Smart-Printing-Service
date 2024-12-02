@@ -11,7 +11,7 @@
 ## Demo
 
 
-https://github.com/kyimmQ/hcmut-spss/assets/118438265/adfbc2f8-614d-4efa-8c77-31c92c0fda11
+https://github.com/thaiquangphat/Student-Smart-Printing-Service/tree/main/docs/demo.mp4
 
 
 ## Installation
@@ -49,4 +49,8 @@ https://github.com/kyimmQ/hcmut-spss/assets/118438265/adfbc2f8-614d-4efa-8c77-31
 
 ## Contributors
 
-
+Thai Quang Phat – 2252606
+Phan Quang Minh – 2212074
+Phan Quang Nhan – 2053286
+Phung Gia Minh Khoi – 2252381
+Thai Quang Du – 2252136
