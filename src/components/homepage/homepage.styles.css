@@ -197,11 +197,23 @@
   align-items: center;
 }
 
+.add-form-container h2 {
+  font-size: 24px; /* Kích thước chữ tiêu đề */
+  color: #106ec1; 
+  text-align: center;
+  margin-bottom: 10px; 
+}
+
+.add-printer-form label {
+  margin: 0; 
+  padding: 0;
+}
+
 .add-printer-form {
   width: 80%; /* Chiều rộng form */
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Khoảng cách giữa các hàng */
+  gap: 50px; /* Khoảng cách giữa các hàng */
 }
 
 .add-printer-form h2 {
@@ -215,17 +227,17 @@
   display: flex;
   justify-content: space-between; /* Căn chỉnh đều */
   align-items: center;
-  font-size: 18px; /* Kích thước chữ trong label */
+  font-size: 25px; /* Kích thước chữ trong label */
   font-weight: bold;
   color: #333; /* Màu chữ chính */
   width: 100%;
 }
 
 .add-printer-form input {
-  flex: 1; /* Giãn ô nhập liệu */
+  flex: 2; /* Giãn ô nhập liệu */
   margin-left: 10px;
   padding: 10px; /* Khoảng cách bên trong ô */
-  font-size: 16px; /* Kích thước chữ trong ô nhập */
+  font-size: 25px; /* Kích thước chữ trong ô nhập */
   border: 1px solid #ccc; /* Viền ô nhập */
   border-radius: 5px; /* Bo góc */
 }
@@ -238,7 +250,7 @@
 .add-printer-form .form-buttons {
   display: flex;
   justify-content: space-between; /* Căn đều nút Confirm và Go Back */
-  margin-top: 20px;
+  margin-top: -4px;
 }
 
 .add-printer-form .button-footer {

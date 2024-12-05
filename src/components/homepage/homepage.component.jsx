@@ -234,7 +234,7 @@ const Homepage = (props) => {
                     </label>
                     <label>
                       Vị trí:
-                      <input type="text" defaultValue="H6-303" /> at{" "}
+                      <input type="text" defaultValue="H6-303" /> tại{" "}
                       <input type="text" defaultValue="Di An" />
                     </label>
                     <label>
