@@ -16,6 +16,8 @@
   </a>
 </div>
 
+Our full presentation can be found at https://youtu.be/TU2vorEASt4.
+
 ## Installation
 
 0. Make sure you have `npm` install on your machine before proceeding with the installation
